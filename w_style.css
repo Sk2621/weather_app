@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #e0f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 90%;
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #00acc1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00838f;
+}
+
+#weatherResult {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.toggle input[type="checkbox"] {
+  display: none;
+}
+
+.toggle .slider {
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  position: relative;
+  margin: 0 10px;
+}
+
+.toggle .slider::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 1px;
+  top: 1px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.toggle input[type="checkbox"]:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+.label-text {
+  font-size: 14px;
+}
