@@ -38,6 +38,8 @@ weather-app/
 
 - Sign up at: [https://openweathermap.org/api](https://openweathermap.org/api)  
 - Copy your API key and paste it into `script.js`:
-
 ```js
 const apiKey = "YOUR_API_KEY";
+
+## Check for demo
+https://sk2621.github.io/weather_app/
